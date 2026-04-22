@@ -64,3 +64,13 @@ for (let usuario of usuarios) {
     
 }
 
+const conteoGeneros = usuarios.reduce((acumulador, usuario) => {
+    let genero = usuario.genero;
+    
+    
+    acumulador[genero] = (acumulador[genero] || 0) + 1;
+    
+    return acumulador;
+}, {}); 
+
+console.log("Conteo de géneros:", conteoGeneros);
