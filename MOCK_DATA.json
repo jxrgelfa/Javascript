@@ -1,7 +1,4 @@
-// Tarea 2
-
-
-let usuarios = [{"id":1,"nombre":"Clayborne","apellido":"Tregea","email":"ctregea0@thetimes.co.uk","genero":"Male","direccion_ip":"83.231.81.175"},
+[{"id":1,"nombre":"Clayborne","apellido":"Tregea","email":"ctregea0@thetimes.co.uk","genero":"Male","direccion_ip":"83.231.81.175"},
 {"id":2,"nombre":"Abner","apellido":"Howlings","email":"ahowlings1@dion.ne.jp","genero":"Male","direccion_ip":"68.10.201.40"},
 {"id":3,"nombre":"Casper","apellido":"Maddigan","email":"cmaddigan2@wsj.com","genero":"Male","direccion_ip":"176.77.143.196"},
 {"id":4,"nombre":"Austen","apellido":"Ducker","email":"aducker3@tuttocitta.it","genero":"Male","direccion_ip":"23.108.176.253"},
@@ -51,16 +48,3 @@ let usuarios = [{"id":1,"nombre":"Clayborne","apellido":"Tregea","email":"ctrege
 {"id":48,"nombre":"Gayleen","apellido":"Olver","email":"golver1b@amazon.co.uk","genero":"Female","direccion_ip":"109.35.155.161"},
 {"id":49,"nombre":"Ofilia","apellido":"Goolding","email":"ogoolding1c@cnbc.com","genero":"Female","direccion_ip":"244.40.226.7"},
 {"id":50,"nombre":"Judon","apellido":"Dawidowicz","email":"jdawidowicz1d@reuters.com","genero":"Male","direccion_ip":"188.22.35.11"}]
-
-
-let entradaUsuario = Number(prompt("Ingrese un id: "));
-
-let usuarioEncontrado = null;
-
-for (let usuario of usuarios) {
-    if (usuario.id === entradaUsuario) {
-        console.log(usuario)
-    } break
-    
-}
-
