@@ -1,4 +1,4 @@
-// Tarea 2
+// Tarea 3
 
 
 let usuarios = [{"id":1,"nombre":"Clayborne","apellido":"Tregea","email":"ctregea0@thetimes.co.uk","genero":"Male","direccion_ip":"83.231.81.175"},
@@ -74,3 +74,4 @@ const conteoGeneros = usuarios.reduce((acumulador, usuario) => {
 }, {}); 
 
 console.log("Conteo de géneros:", conteoGeneros);
+
