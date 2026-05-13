@@ -108,9 +108,35 @@ console.log(clasificacionFinanciera(ganancia))
 
 // 3. Cantidad de ahorro por banco 
 
+function agruparCategoria(productos, propiedad ) {
+    const resultado = {}
+
+    productos.forEach(producto => {
+        const valorPropiedad = producto[propiedad]
+        if(!resultado[valorPropiedad]) {
+            resultado[valorPropiedad] = {
+                nombre: valorPropiedad,
+                cantidadUsuarios: 0,
+                ahorroTotal: 0
+            };
+        }
+    
+
+        resultado[valorPropiedad].cantidadUsuarios++;
+        resultado[valorPropiedad].ahorroTotal += obtenerGananciaUsuario(producto);
+    })
+    return resultado;
+
+    
+}
+
+console.log(agruparCategoria(usuarios, "bank"))
 
 
+// 4.  Pais con mejor ahorro
 
+
+console.log(agruparCategoria(usuarios, "country"))
 
 
 // if (!usuario) {
